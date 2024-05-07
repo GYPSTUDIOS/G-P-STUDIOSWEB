@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G&P STUDIOS</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="IMG/gyp.jpg">
+  <!-- Agrega jQuery y Slick Carousel -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</head>
+<body>
+    <div class="footer">
+        <div class="sugerencias-button">
+            <a href="mailto:oficialcolombiacraft@gmail.com?subject=Sugerencia" target="_blank">Enviar Sugerencia</a>
+        </div>
+        <!-- Otros elementos de la barra de navegación -->
+    </div>
+    <header>
+        <h1>Bienvenidos a la Web Oficial de G&P STUDIOS</h1>
+        <!-- Botones de navegación -->
+        <div class="nav-buttons">
+            <a href="#donaciones" class="nav-button">Donaciones</a>
+            <a href="#galeria" class="nav-button">Multimedia</a>
+            <a href="#discord" class="nav-button">DISCORD</a>
+            <a href="#notificacion-streams" class="nav-button">Solicitudes</a>
+        </div>
+    </header>
+    
+    <style>
+        #ultimo + div{
+            visibility:hidden;
+        }
+    </style>
+
+<div class="container">
+  <h2 class="secondary-text">Aca podras encontrar noticias de los servers de minecraft, noticias de nuevos proyectos.</h2>
+  <img src="IMG/gyp.jpg" alt="Logo G&P STUDIOS" class="logo">
+  <button class="donar-btn">Haz tu donación para mejorar nuestros servidores de Minecraft y poder pagar el hosting</button>
+</div>
+
+<div class="server-status">
+    <h2>Estado del servidor:</h2>
+    <p id="countdown-timer"></p>
+</div>
+
+<!-- Sección "¿Qué es G&P STUDIOS?" -->
+<div class="container">
+    <h2>¿Qué es G&P STUDIOS? 🚀</h2>
+    <p>
+        G&P STUDIOS es una mini marca o empresa, fundada por GP, creador de G&P STUDIOS, y Phantom, co-fundador y CEO de G&P. El nombre oficial fue dado y oficializado el 19 de abril de 2023, aunque ya existía bajo otro nombre. 📆📝
+    </p>
+    <p>
+        Desde 2020, se creó GamersantiProductions, un canal de YouTube que se dedicaba a todo tipo de contenido. Con el tiempo, el canal fue abandonado y los videos se pusieron en privado. Sin embargo, GP, responsable de todo, no detuvo la creación de contenido por mucho tiempo. A mediados de 2022, GP vio el DESAFÍO 2 desde la perspectiva de Juan. Aunque desde pequeño jugaba Minecraft, el único servidor que había hecho era en Aternos Vanilla para jugar con Phantom porque no sabía cómo poner mods. Le pareció muy interesante cómo jugaban con chat de voz y demás en un juego que en su mundo es algo limitado. Buscó por un tiempo un servidor parecido hasta que encontró uno de México, aunque al principio le pareció interesante, a la media hora cayó en cuenta de lo mal ejecutado que estaba, lo mal moderado, y dejó de jugar. Pero no la ambición, lo llevó a proponerle a Phantom por segunda vez armar un servidor como el de los streamers, y de ahí nació la planificación de lo que en un futuro sería Parceland, pero eso es una historia para otra sección. Aunque en los primeros trailers se ve la marca de agua de GamersantiProductions, ni a él ni a Phantom les gustaba mucho. Vale aclarar que GP se empezó a llamar así ya que los usuarios del primer Parceland le decían así, ya que se llamaba GpOficial, G amersanti P roductions. De ahí se le ocurrió juntar la G, de GP y la P de Phantom y productions, agregándole la & y creando G&P STUDIOS, dándole su logo su mascota y empezando una meta. G&P STUDIOS, aunque es principalmente conocido por los servidores de Minecraft, ha estado trabajando poco a poco en moderación, programación, mods, música, etc. Hay mucho en el futuro por descubrir y ahí vamos poco a poco. Esto es G&P STUDIOS. 🎮🌟💡🔨🎵
+    </p>
+</div>
+
+
+
+  <div id="galeria" class="container">
+    <h2>Algunas muestras de lo que ha hecho G&P STUDIOS</h2>
+    <div class="image-grid">
+        <div class="image-wrapper">
+            <img src="IMG/image1.jpg" alt="Imagen 1" class="small-image" onclick="toggleImageSize(this)">
+        </div>
+        <div class="image-wrapper">
+            <img src="IMG/image2.jpg" alt="Imagen 2" class="small-image" onclick="toggleImageSize(this)">
+        </div>
+        <div class="image-wrapper">
+            <img src="IMG/image3.jpg" alt="Imagen 3" class="small-image" onclick="toggleImageSize(this)">
+        </div>
+    </div>
+</div>
+
+<div id="videos" class="container">
+    <h2>Algunos vídeos de G&P STUDIOS</h2>
+    <div class="video-grid">
+        <div class="video-wrapper">
+            <video controls>
+                <source src="VID/video1.mp4" type="video/mp4">
+                Tu navegador no admite el elemento de video.
+            </video>
+            <p class="video-title">Trailer Parceland 1</p> <!-- Título del video 1 -->
+        </div>
+        <div class="video-wrapper">
+            <video controls>
+                <source src="VID/video2.mp4" type="video/mp4">
+                Tu navegador no admite el elemento de video.
+            </video>
+            <p class="video-title">Trailer Parceland 2</p> <!-- Título del video 2 -->
+        </div>
+        <div class="video-wrapper">
+            <video controls>
+                <source src="VID/video3.mp4" type="video/mp4">
+                Tu navegador no admite el elemento de video.
+            </video>
+            <p class="video-title">Trailer A Nightmare World | Historia</p> <!-- Título del video 2 -->
+        </div>
+        <div class="video-wrapper">
+            <video controls>
+                <source src="VID/video4.mp4" type="video/mp4">
+                Tu navegador no admite el elemento de video.
+            </video>
+            <p class="video-title">Trailer A Nightmare World | Server</p> <!-- Título del video 2 -->
+        </div>
+    </div>
+</div>
+<div id="discord" class="container discord-container">
+    <img src="IMG/gyp.jpg" alt="Logo G&P STUDIOS" class="discord-logo">
+    <div class="discord-content">
+        <h2 class="discord-title">¡Estás invitado/a al Discord oficial de G&P STUDIOS!</h2>
+        <p class="discord-text">Entra al Discord oficial para poder acceder a los servidores y disfrutar de contenido exclusivo. ¡Estás cordialmente invitado/a! Te esperamos dentro. 🎉</p>
+    </div>
+    <button class="discord-btn" onclick="window.location.href='https://discord.gg/EhYdZMnTFY';">Únete</button>
+</div>
+
+<div id="notificacion-streams" class="container">
+    <h2 class="section-title">Notificación de Streams 📢</h2>
+    <p class="section-text">Si quieres que en el Discord se notifique cada que hagas stream, presiona el botón y llena el formulario para que nosotros validemos la notificación. ¡Te mantendremos informado/a! 🎮</p>
+    <button class="section-btn" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfE3LoYYUQ063lldZ3NOwXh5MrrqA8gyXeQEelD-mGaJYlMww/viewform?usp=sf_link'">Notificar Stream</button>
+</div>
+
+<div id="solicitud-mod" class="container">
+    <h2 class="section-title">Solicitud de Mod 🛠️</h2>
+    <p class="section-text">Si te gustaría ser moderador del Discord, builder de los servers, modelador, programador, o moderador de los servers de MC, dale al botón y llena el formulario de ahí nosotros miraremos y te diremos si te aceptamos o no. ¡Esperamos tu solicitud! 😊</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-IkV-wjowo2HGaKZ5CZb_4PcqbIskpbOKVXEkLYwJhIVJrg/viewform?usp=sf_link" class="section-btn">Solicitar</a>
+</div>
+
+<div class="creation-story container">
+    <h2>Historia de la Creación de Parceland 🏗️</h2>
+    <div class="story-text">
+        <p>Parceland es un servidor de Minecraft creado por GP y Phantom. Este fue creado después de que GP viera El Desafío 2 y se sintiera atraído por los mods que tenía. Buscó por un tiempo un servidor parecido hasta que encontró uno de México, aunque al principio le pareció interesante, a la media hora cayó en cuenta de lo mal ejecutado que estaba, lo mal moderado, y dejó de jugar. Pero no la ambición, lo llevó a proponerle a Phantom por segunda vez armar un servidor como el de los streamers, y de ahí nació la planificación de lo que en un futuro sería Parceland.</p>
+        <img src="IMG/image1.jpg" alt="Imagen de Parceland" class="parce-image">
+        <p>Planearon muchos nombres, Parcecraft, Colombialand, Colombiacraft, y al final se decidió por, obviamente, Colombiacraft, pero realmente no les convenció y tiempo después siguiendo la tradición de cualquier serie de youtuber promedio, dejaron el "Parce" y le pusieron el "Land" al final, de ahí el nombre Parceland.</p>
+        <p>Con muy poca experiencia, literalmente nada pero con ganas de hacerlo, empezaron el proceso. Se dividieron los trabajos, Phantom como builder decorado todo lo que era construcción de server lo hacía él, mientras tanto GP, se encargaba de moderación, los mods, publicidad, cuidado del server, contenido, y entre los dos planeación. El 26 de agosto de 2022 saldría el trailer de Parceland.</p>
+    </div>
+    <a href="#videos" class="trailer-btn">Trailer</a>
+    <div class="additional-text">
+        <p>Al principio con un TikTok entraría una persona, Juanse, y al otro día entraría la segunda persona, Chimsu. Poco a poco entrarían más, y ellos mejorarían el server haciendo eventos, y creándole un lore que está a punto de ser revelado, y que probablemente saquemos una sección de eso. Ya ha tenido más de 4 entregas esperando la 5 con solo 2 canon, dos spin-offs, Surviving Hell, y A NIGHTMARE WORLD, y muchos más proyectos en proceso y planeación. El futuro es incierto pero sin duda G&P STUDIOS trabaja para mejorar todo, abriendo en esta página la sección de donaciones para poder pagar un host de pago y así poder mejorar la calidad. Si te gustaría apoyar ve a la sección y dona en la opción que quieras, cualquier cantidad sirve.</p>
+    </div>
+</div>
+
+
+<div class="social-buttons">
+    <a href="https://www.youtube.com/@parceland5255/videos" target="_blank"><img src="IMG/Youtube_logo.jpg" alt="YouTube"></a>
+    <a href="https://www.instagram.com/gyp_ofi?igsh=OTZ0Z2p0ajcwenFw" target="_blank"><img src="IMG/ig.jpg" alt="Instagram"></a>
+    <a href="https://www.tiktok.com/@parcelandgyp?_t=8ltY9QV13TC&_r=1" target="_blank"><img src="IMG/tiktok.jpg" alt="TikTok"></a>
+</div>
+
+<!-- Sección de donaciones -->
+<div id="donaciones" class="container">
+  <h2>Haz tu donación para mejorar los servidores de Minecraft y pagar el host</h2>
+  <p class="secondary-text">Tu apoyo nos permite mantener nuestros servidores en funcionamiento y ofrecer una mejor experiencia para todos los jugadores.</p>
+  <p class="secondary-text">¡Cualquier cantidad es apreciada!</p>
+  <!-- Agregar la clase "nav-button" a todos los botones -->
+<!-- Botones de donaciones -->
+<a href="https://www.paypal.com/donate/?hosted_button_id=7L9R2EBCR6LTU" class="nav-button">Donar con PayPal</a>
+<a href="https://ko-fi.com/gpstudios" class="nav-button">Apoyar en Ko-fi</a>
+
+<div class="nav-buttons">
+    
+</div>
+
+<div class="donation-goal container">
+    <h2>Meta de Donaciones para el Host💸</h2>
+    <p id="donation-amount">0/32 USD</p>
+</div>
+
+
+
+
+<script src="script.js"></script> <!-- Asegúrate de que la ruta sea correcta -->
+
+<div id="ultimo"></div>
+
+</body>
+</html>

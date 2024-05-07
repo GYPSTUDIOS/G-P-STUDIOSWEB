@@ -1,0 +1,441 @@
+/* Reset de estilos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Fuente predeterminada */
+    background-color: #232323; /* Fondo gris oscuro */
+    color: #fff; /* Texto blanco */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333; /* Fondo gris oscuro */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-top: 20px;
+}
+
+.container.secondary {
+    background-color: #444; /* Fondo gris medio */
+}
+
+header {
+    text-align: center;
+    padding: 40px 0;
+}
+
+h1 {
+    font-size: 48px; /* Tamaño de fuente grande para el encabezado */
+    margin-bottom: 20px;
+    color: #4CAF50; /* Color de texto verde */
+    font-family: 'Arial', sans-serif; /* Fuente */
+}
+
+.nav-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+.nav-button {
+    display: inline-block;
+    margin: 0 10px; /* Espacio entre botones */
+    padding: 12px 24px;
+    background-color: #FFA500; /* Naranja */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px; /* Tamaño de fuente más grande para los botones */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+.nav-button:hover {
+    background-color: #FFC107; /* Naranja claro al pasar el ratón */
+    transform: scale(1.1); /* Escalar el botón al 110% cuando el cursor pasa sobre él */
+}
+.nav-button:hover {
+    animation: shake 1.5s ease infinite; /* Duración de la animación de 1.5 segundos */
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(-2px, -2px); }
+    25% { transform: translate(2px, 2px); }
+    50% { transform: translate(-2px, -2px); }
+    75% { transform: translate(2px, 2px); }
+    100% { transform: translate(-2px, -2px); }
+  }
+  
+
+.secondary-text {
+    font-size: 18px; /* Tamaño de fuente más grande para el texto secundario */
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.donar-btn, .discord-btn {
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px; /* Tamaño de fuente más grande para los botones */
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s; /* Transición de color al pasar el ratón */
+}
+
+.donar-btn:hover, .discord-btn:hover {
+    background-color: #45a049; /* Verde más oscuro al pasar el ratón */
+}
+
+/* Estilos para las imágenes */
+.image-wrapper {
+    margin-bottom: 20px;
+    max-width: 400px; /* Ancho máximo para las imágenes */
+    margin: 0 auto; /* Centrar las imágenes */
+    overflow: hidden; /* Ocultar el desbordamiento para suavizar la transición */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s; /* Transición suave */
+}
+
+.image-wrapper:hover {
+    transform: scale(1.1); /* Escalar la imagen al 110% cuando el cursor pasa sobre ella */
+}
+
+.image-wrapper img {
+    width: 100%; /* Imágenes al 100% del ancho del contenedor */
+    transition: transform 0.3s; /* Transición suave */
+}
+
+.image-wrapper:hover img {
+    transform: scale(1.1); /* Escalar la imagen al 110% cuando el cursor pasa sobre ella */
+}
+
+.video-wrapper video {
+    width: 100%; /* Videos al 100% del ancho del contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+#discord {
+    background-color: #c7a8d8; /* Fondo morado claro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.discord-container {
+    color: #333; /* Texto oscuro */
+    flex: 1;
+}
+
+.discord-content {
+    margin-left: 20px;
+}
+
+.discord-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.discord-text {
+    font-size: 16px;
+}
+
+.discord-logo {
+    width: 100px; /* Tamaño mediano de la imagen del logo de Discord */
+}
+
+.discord-btn {
+    background-color: #6a287e; /* Morado oscuro */
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición de color al pasar el ratón */
+}
+
+.discord-btn:hover {
+    background-color: #4b1a58; /* Morado más oscuro al pasar el ratón */
+}
+#notificacion-streams {
+    background-color: #333; /* Fondo gris oscuro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-top: 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px; /* Tamaño de fuente grande para el título */
+    margin-bottom: 20px;
+}
+
+.section-text {
+    font-size: 18px; /* Tamaño de fuente más grande para el texto secundario */
+    margin-bottom: 20px;
+}
+
+.section-btn {
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px; /* Tamaño de fuente más grande para el botón */
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s; /* Transición de color al pasar el ratón */
+}
+
+.section-btn:hover {
+    background-color: #45a049; /* Verde más oscuro al pasar el ratón */
+}
+#solicitud-mod {
+    background-color: #333; /* Fondo gris oscuro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-top: 20px;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #4CAF50; /* Color de texto verde */
+}
+
+.section-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.emoji {
+    font-size: 24px;
+    margin-left: 5px;
+}
+
+.section-btn {
+    background-color: #FFA500; /* Naranja */
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición de color al pasar el ratón */
+}
+
+.section-btn:hover {
+    background-color: #FFC107; /* Naranja claro al pasar el ratón */
+    transform: scale(1.1); /* Escalar el botón al 110% cuando el cursor pasa sobre él */
+}
+.donation-goal {
+    background-color: #333; /* Fondo gris oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-top: 20px;
+}
+
+.donation-goal h2 {
+    font-size: 24px; /* Tamaño de fuente para el título */
+    margin-bottom: 10px;
+}
+
+#donation-amount {
+    font-size: 20px; /* Tamaño de fuente para el texto de la meta de donaciones */
+}
+.creation-story {
+    background-color: #333; /* Fondo gris oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-top: 20px;
+}
+
+.creation-story h2 {
+    font-size: 24px; /* Tamaño de fuente para el título */
+    margin-bottom: 10px;
+}
+
+.parce-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.creation-story .story-text p {
+    font-size: 18px; /* Tamaño de fuente para el texto */
+    margin-top: 7px;
+}
+
+.creation-story .trailer-btn {
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px; /* Tamaño de fuente para el botón */
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición de color al pasar el ratón */
+}
+
+.creation-story .trailer-btn:hover {
+    background-color: #45a049; /* Verde más oscuro al pasar el ratón */
+}
+
+.creation-story .additional-text p {
+    font-size: 18px; /* Tamaño de fuente para el texto adicional */
+    margin-top: 20px;
+}
+.social-buttons {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    text-align: center;
+}
+
+.social-buttons a {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.social-buttons img {
+    width: 30px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+}
+
+.tiktok-button {
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 12px;
+}
+.footer {
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos a los extremos */
+    align-items: center; /* Centra verticalmente los elementos */
+    margin-top: 20px;
+}
+
+.sugerencias-button {
+    margin-left: 20px; /* Ajusta el margen izquierdo */
+}
+
+.sugerencias-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Verde */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Transición de color al pasar el ratón */
+}
+
+.sugerencias-button a:hover {
+    background-color: #45a049; /* Verde más oscuro al pasar el ratón */
+}
+.container {
+    background-color: #333; /* Fondo gris oscuro */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px;
+    margin-top: 20px;
+}
+@media screen and (max-width: 600px) {
+    .container {
+      padding: 10px; /* Reduce el relleno en dispositivos móviles */
+      max-width: 100%; /* Ancho máximo en dispositivos móviles */
+    }
+  
+    .nav-buttons {
+      flex-direction: column; /* Alinea los botones verticalmente en dispositivos móviles */
+    }
+  
+    .nav-button {
+      margin: 10px auto; /* Centra los botones horizontalmente en dispositivos móviles */
+    }
+    .server-status {
+        background-color: #333; /* Fondo gris oscuro */
+        color: #fff; /* Texto blanco */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .server-status h2 {
+        font-size: 24px; /* Tamaño de fuente para el título */
+        margin-bottom: 10px;
+        color: #4CAF50; /* Color de texto verde */
+    }
+    
+    .server-status p {
+        font-size: 20px; /* Tamaño de fuente para el texto */
+        margin-top: 7px;
+    }
+    
+    #countdown-timer {
+        font-size: 24px; /* Tamaño de fuente para la cuenta regresiva */
+        margin-top: 10px;
+    }
+    
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
