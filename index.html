@@ -19,13 +19,10 @@
         <!-- Otros elementos de la barra de navegación -->
     </div>
     <header>
-        <h1>Bienvenidos a la Web Oficial de G&P STUDIOS</h1>
-        <!-- Botones de navegación -->
         <div class="nav-buttons">
-            <a href="#donaciones" class="nav-button">Donaciones</a>
             <a href="#galeria" class="nav-button">Multimedia</a>
-            <a href="#discord" class="nav-button">DISCORD</a>
-            <a href="#notificacion-streams" class="nav-button">Solicitudes</a>
+            <a href="#discord" class="nav-button">Discord</a>
+            <a href="#donation-amount" class="nav-button">Donaciones</a>
         </div>
     </header>
     
@@ -41,10 +38,7 @@
   <button class="donar-btn">Haz tu donación para mejorar nuestros servidores de Minecraft y poder pagar el hosting</button>
 </div>
 
-<div class="server-status">
-    <h2>Estado del servidor:</h2>
-    <p id="countdown-timer"></p>
-</div>
+
 
 <!-- Sección "¿Qué es G&P STUDIOS?" -->
 <div class="container">
@@ -149,19 +143,18 @@
     <a href="https://www.tiktok.com/@parcelandgyp?_t=8ltY9QV13TC&_r=1" target="_blank"><img src="IMG/tiktok.jpg" alt="TikTok"></a>
 </div>
 
-<!-- Sección de donaciones -->
-<div id="donaciones" class="container">
-  <h2>Haz tu donación para mejorar los servidores de Minecraft y pagar el host</h2>
-  <p class="secondary-text">Tu apoyo nos permite mantener nuestros servidores en funcionamiento y ofrecer una mejor experiencia para todos los jugadores.</p>
-  <p class="secondary-text">¡Cualquier cantidad es apreciada!</p>
-  <!-- Agregar la clase "nav-button" a todos los botones -->
-<!-- Botones de donaciones -->
-<a href="https://www.paypal.com/donate/?hosted_button_id=7L9R2EBCR6LTU" class="nav-button">Donar con PayPal</a>
-<a href="https://ko-fi.com/gpstudios" class="nav-button">Apoyar en Ko-fi</a>
-
-<div class="nav-buttons">
-    
+<div class="donation-buttons">
+    <a href="https://www.paypal.com/donate/?hosted_button_id=7L9R2EBCR6LTU" class="donate-button paypal" target="_blank">
+        <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" alt="Donate with PayPal">
+    </a>
+    <a href="https://ko-fi.com/gpstudios" class="donate-button kofi" target="_blank">
+        <img src="https://storage.ko-fi.com/cdn/cup-border.png" alt="Donate with Ko-fi">
+    </a>
+    <a href="https://www.patreon.com/gypstudiosofi" class="donate-button patreon" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Patreon_logo.svg" alt="Donate with Patreon">
+    </a>
 </div>
+
 
 <div class="donation-goal container">
     <h2>Meta de Donaciones para el Host💸</h2>
@@ -171,7 +164,8 @@
 
 
 
-<script src="script.js"></script> <!-- Asegúrate de que la ruta sea correcta -->
+<!-- Scripts JavaScript -->
+<script src="script.js"></script>
 
 <div id="ultimo"></div>
 
